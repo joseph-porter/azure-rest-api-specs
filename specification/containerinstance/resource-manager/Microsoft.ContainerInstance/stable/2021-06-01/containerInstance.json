@@ -1298,6 +1298,10 @@
                   "description": "The network profile information for a container group.",
                   "$ref": "#/definitions/ContainerGroupNetworkProfile"
                 },
+                "virtualNetworkSubnet": {
+                  "description": "The virtual network and subnet resource for a container group.",
+                  "$ref": "#/definitions/VirtualNetworkSubnetID"
+                },
                 "dnsConfig": {
                   "description": "The DNS config information for a container group.",
                   "$ref": "#/definitions/DnsConfiguration"
@@ -1454,6 +1458,19 @@
       "properties": {
         "id": {
           "description": "The identifier for a network profile.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    },
+    "VirtualNetworkSubnetID": {
+      "description": "Virtual network and subnet resource identifier.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Resource ID of virtual network and subnet.",
           "type": "string"
         }
       },

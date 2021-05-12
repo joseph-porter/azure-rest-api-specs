@@ -1298,8 +1298,8 @@
                   "description": "The network profile information for a container group.",
                   "$ref": "#/definitions/ContainerGroupNetworkProfile"
                 },
-                "virtualNetworkSubnet": {
-                  "description": "The virtual network and subnet resource for a container group.",
+                "subnetId": {
+                  "description": "The virtual network and subnet resource ID for a container group.",
                   "$ref": "#/definitions/VirtualNetworkSubnetID"
                 },
                 "dnsConfig": {
